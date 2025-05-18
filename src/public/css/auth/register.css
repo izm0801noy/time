@@ -1,0 +1,128 @@
+/* 共通設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* ===== ヘッダー（Block: header） ===== */
+.header {
+    background-color: #000000;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.header__logo-text {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ===== メイン（Block: register） ===== */
+.register {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.register__container {
+    width: 100%;
+    max-width: 700px;
+}
+
+.register__title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ===== フォーム要素（Block: register） ===== */
+.register__form {
+    width: 100%;
+}
+
+.register__form-group {
+    margin-bottom: 20px;
+}
+
+.register__label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.register__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.register__button {
+    width: 100%;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.register__button:hover {
+    opacity: 0.9;
+}
+
+/* ===== ログインリンク（Block: register） ===== */
+.register__link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register__login-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.register__login-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== エラーメッセージ（Block: register） ===== */
+.register__error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* ===== PC画面幅が1400〜1540pxの場合の調整 ===== */
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .register {
+        padding: 60px 40px;
+    }
+
+    .register__container {
+        margin: 0 auto;
+        max-width: 700px;
+        /* 既にありますが念のため再指定 */
+    }
+
+    .register__title {
+        font-size: 26px;
+    }
+
+    .register__input {
+        font-size: 16px;
+    }
+
+    .register__button {
+        font-size: 16px;
+    }
+}

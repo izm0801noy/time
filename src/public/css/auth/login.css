@@ -1,0 +1,132 @@
+/* ===== 共通設定 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* ===== ヘッダー（Block: login-header） ===== */
+.login-header {
+    background-color: #000000;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.login-header__logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ===== メイン（Block: login） ===== */
+.login {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.login__container {
+    width: 100%;
+    max-width: 700px;
+}
+
+.login__title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ===== フォーム要素 ===== */
+.login__form {
+    width: 100%;
+}
+
+.login__form-group {
+    margin-bottom: 20px;
+}
+
+.login__label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.login__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.login__input--invalid {
+    border-color: #ff0000;
+}
+
+.login__error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* ===== ボタン ===== */
+.login__button {
+    width: 100%;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.login__button:hover {
+    opacity: 0.9;
+}
+
+/* ===== リンク ===== */
+.login__link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login__register-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.login__register-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== PC画面幅が1400〜1540pxの場合の調整 ===== */
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .register {
+        padding: 60px 40px;
+    }
+
+    .register__container {
+        margin: 0 auto;
+        max-width: 700px;
+        /* 既に指定されている場合でも再確認のため再指定 */
+    }
+
+    .register__title {
+        font-size: 26px;
+    }
+
+    .register__input {
+        font-size: 16px;
+    }
+
+    .register__button {
+        font-size: 16px;
+    }
+}
